@@ -1,35 +1,42 @@
 // fonts
-@font-face{
-	 font-family: "OpenSansRegular";
-	 src:url("../../assets/fonts/OpenSansRegular.woff") format("woff");
-	 src: url("../../assets/fonts/OpenSansRegular.ttf");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+.OS {
+	font-family: 'Oswald', sans-serif;
 }
-@font-face{
-	 font-family: "OpenSansBold";
-	 src:url("../../assets/fonts/OpenSansBold.woff") format("woff");
-	 src: url("../../assets/fonts/OpenSansBold.ttf");
+.op {
+	font-family: 'Open Sans', sans-serif;
 }
-@font-face{
-	 font-family: "OpenSansSemiBold";
-	 src:url("../../assets/fonts/OpenSansSemiBold.woff") format("woff");
-	 src: url("../../assets/fonts/OpenSansSemiBold.ttf");
+.OP-R {
+	.op;
+	font-weight: 400;
+	font-style: normal;
 }
-@font-face{
-	 font-family: "OpenSansBoldItalic";
-	 src:url("../../assets/fonts/OpenSansBoldItalic.woff") format("woff");
-	 src: url("../../assets/fonts/OpenSansBoldItalic.ttf");
+.OP-RI {
+	.op;
+	font-weight: 400;
+	font-style: italic;
 }
-@font-face{
-	 font-family: "Oswald";
-	 src: url("../../assets/fonts/Oswald.otf");
+.OP-S {
+	.op;
+	font-weight: 600;
+	font-style: normal;
 }
-@font-face{
-	 font-family: "OpenSansSemiBoldItalic";
-	 src:url("../../assets/fonts/OpenSansSemiBoldItalic.woff") format("woff");
-	 src: url("../../assets/fonts/OpenSansSemiBoldItalic.ttf");
+.OP-SI {
+	.op;
+	font-weight: 600;
+	font-style: italic;
 }
-@font-face{
-	 font-family: "OpenSansItalic";
-	 src:url("../../assets/fonts/OpenSansItalic.woff") format("woff");
-	 src: url("../../assets/fonts/OpenSansItalic.ttf");
+.OP-B {
+	.op;
+	font-weight: 600;
+	font-style: normal;
+}
+.OP-BI {
+	.op;
+	font-weight: 600;
+	font-style: italic;
+}
+body {
+	.OP-R;
 }

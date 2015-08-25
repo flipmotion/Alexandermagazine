@@ -1,84 +1,111 @@
 .footer {
 	&-lvl-1 {
-		min-height: 557px;
-		background-image: url(../../assets/img/footer_bg.jpg);
-		background-position: center center;
-		-webkit-background-size: cover;
-		background-size: cover;
-		.wrap{
-			h2{
-				font:40px MyriadProSemiBold;
-				color:#fff;
-				text-transform: uppercase;
-				margin:90px 0 20px;
-			}
-			.akcia{
-				padding-bottom:50px; 
-				background-image: url(../../assets/img/footer_bg2.png);
-				background-position: left bottom;
-				background-repeat: no-repeat;
-				img{
-					margin:20px 0 20px 180px;
-				}
-				h6{
-					font:25px MyriadProSemiBold;
-					color: #fff;
-					display: inline-block;
-					margin:55px 0 0px 10px;
-				}
-				p{
-					font: 16px MyriadProRegular;
-					color:#fff;
-					margin-left: 180px;
-					
-				}
-			}
-		}
-		form{
-			background-color: #fff;
-			margin-top: 140px;
-			h3{
-				font: 28px MyriadProSemiBold;
-				/*margin:35px 21px 10px;*/
+		background-color: #f3f2ed;
+		padding: 40px 0;
+	}
+	&-lvl-2 {
+		padding: 20px 0;
+		background: #00aeab;
+		ul {
+			margin: 0 auto;
+			padding:0;
+			display: table;
+			li {
 				display: inline-block;
-				line-height: 28px;
+				font-size: 0;
+				vertical-align: middle;
+				&:after {
+					content: '';
+					width: 1px;
+					height: 12px;
+					background: #fff;
+					display: inline-block;
+					vertical-align: middle;
+					margin: 0 10px 0px 12px ;
+				}
+				&:last-child {
+					&:after {
+						content: none;
+					}
+				}
+				a {
+					font-weight: 600;
+					font-size: 14px;
+					display: inline-block;
+					vertical-align: middle;
+					color: #fff;
+					&:hover,&:focus {
+						text-decoration: underline;
+					}
+				}
 			}
-			p{
-				font: 16px MyriadProRegular;
-				margin-bottom: 20px;
-			}
-			.phone{
-				border-radius: 0;
-				border: 1px solid #808080;
-				background-image: url(../../assets/img/phone2.jpg);
-				background-repeat: no-repeat;
-				background-position: right 10px center;
-				margin:10px 0;
-			}
-			.btn{
-				font:16px MyriadProSemiBold;
-				color: #000;
-				text-transform: uppercase;
-				width: 100%;
-				text-align:center;
-				padding:18px 0 14px;
-				border:none;
-				border-bottom: 4px solid #f2bc00;
-				margin-bottom: 35px;
-				border-radius: 7px;
-				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff023+0,ffef16+2,ffef04+4,feef00+6,ffef03+10,ffee00+12,ffdf00+100,fad606+100,f2c900+100,f1bf12+100,ffc63e+100 */
-background: rgb(255,240,35); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(255,240,35,1) 0%, rgba(255,239,22,1) 2%, rgba(255,239,4,1) 4%, rgba(254,239,0,1) 6%, rgba(255,239,3,1) 10%, rgba(255,238,0,1) 12%, rgba(255,223,0,1) 100%, rgba(250,214,6,1) 100%, rgba(242,201,0,1) 100%, rgba(241,191,18,1) 100%, rgba(255,198,62,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,240,35,1)), color-stop(2%,rgba(255,239,22,1)), color-stop(4%,rgba(255,239,4,1)), color-stop(6%,rgba(254,239,0,1)), color-stop(10%,rgba(255,239,3,1)), color-stop(12%,rgba(255,238,0,1)), color-stop(100%,rgba(255,223,0,1)), color-stop(100%,rgba(250,214,6,1)), color-stop(100%,rgba(242,201,0,1)), color-stop(100%,rgba(241,191,18,1)), color-stop(100%,rgba(255,198,62,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, rgba(255,240,35,1) 0%,rgba(255,239,22,1) 2%,rgba(255,239,4,1) 4%,rgba(254,239,0,1) 6%,rgba(255,239,3,1) 10%,rgba(255,238,0,1) 12%,rgba(255,223,0,1) 100%,rgba(250,214,6,1) 100%,rgba(242,201,0,1) 100%,rgba(241,191,18,1) 100%,rgba(255,198,62,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, rgba(255,240,35,1) 0%,rgba(255,239,22,1) 2%,rgba(255,239,4,1) 4%,rgba(254,239,0,1) 6%,rgba(255,239,3,1) 10%,rgba(255,238,0,1) 12%,rgba(255,223,0,1) 100%,rgba(250,214,6,1) 100%,rgba(242,201,0,1) 100%,rgba(241,191,18,1) 100%,rgba(255,198,62,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, rgba(255,240,35,1) 0%,rgba(255,239,22,1) 2%,rgba(255,239,4,1) 4%,rgba(254,239,0,1) 6%,rgba(255,239,3,1) 10%,rgba(255,238,0,1) 12%,rgba(255,223,0,1) 100%,rgba(250,214,6,1) 100%,rgba(242,201,0,1) 100%,rgba(241,191,18,1) 100%,rgba(255,198,62,1) 100%); /* IE10+ */
-background: linear-gradient(to right, rgba(255,240,35,1) 0%,rgba(255,239,22,1) 2%,rgba(255,239,4,1) 4%,rgba(254,239,0,1) 6%,rgba(255,239,3,1) 10%,rgba(255,238,0,1) 12%,rgba(255,223,0,1) 100%,rgba(250,214,6,1) 100%,rgba(242,201,0,1) 100%,rgba(241,191,18,1) 100%,rgba(255,198,62,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff023', endColorstr='#ffc63e',GradientType=1 ); /* IE6-9 */
-			}
-			.form-group{
-				margin:0;
-			}	
 		}
+	}
+
+
+
+
+	h3 {
+		color: @orange;
+		font-weight: 600;
+	}
+	.attantion {
+		color: #665f57;
+	}
+	.my-input {
+		text-align: center;
+		font-size: 15px;
+	}
+	&-padding-item {
+		padding: 0 35px;
+		&.bordered {
+			border-left: 1px solid #00aeab;
+			border-right: 1px solid #00aeab;
+			padding: 15px 0;
+		}
+	}
+	.social {
+		margin: 0 auto;
+		padding-left: 0;
+		list-style-type: none;
+		font-size: 0;
+		li {
+			display: inline-block;
+			font-size: 0;
+			margin: 0 3px;
+			a {
+				font-size: 0;
+				width: 50px;
+				display: table;
+				height: 50px;
+				border-radius: 100%;
+				border: 2px solid #0fb2af;
+				&.icon {
+					background-position: center center;
+					background-repeat: no-repeat;
+					&.fb{
+						background: ;
+					}
+					&.fb{
+						background: ;
+					}
+				}
+			}
+		}
+	}
+	.phone {
+		color: #00aeab;
+		font-size: 30px;
+		.OS;
+	}
+	.logo {
+		display: table;
+		margin: 15px auto 30px;
+		max-width: 212px;
+	}
+	.addon {
+		margin-bottom: 0;
+		color: #00aeab;
+		font-weight: 600;
 	}
 }

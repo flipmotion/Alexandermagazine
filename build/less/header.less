@@ -39,28 +39,28 @@
 			background: url(../../assets/img/search.png) #fff center center no-repeat;
 		}
 		input[placeholder]{
-			font:15px OpenSansRegular;
+			font-size: 15px;
 			text-indent: 16px;
 			color:#22b9b6;
 			line-height: 100%;
 			vertical-align: middle;
 		}
 		input::-moz-placeholder{
-			font:15px OpenSansRegular;
+			font-size: 15px;
 			text-indent: 16px;
 			color:#22b9b6;
 			line-height: 100%;
 			vertical-align: middle;
 		} 
 		input:-moz-placeholder{
-			font:15px OpenSansRegular;
+			font-size: 15px;
 			text-indent: 16px;
 			color:#22b9b6;
 			line-height: 100%;
 			vertical-align: middle;
 		} 
 		input:-ms-input-placeholder{
-			font:15px OpenSansRegular;
+			font-size: 15px;
 			text-indent: 16px;
 			color:#22b9b6;
 			line-height: 100%;
@@ -73,7 +73,7 @@
 			margin: 25px 0;
 			ul li a{
 				text-decoration: none;
-				font:13px OpenSansRegular;
+				font-size: 13px;
 				color: #010000;
 				display: inline-block;
 				list-style: none;
@@ -121,12 +121,54 @@
 			min-height: 0;
 			border-radius: 0;
 			text-align: center;
+			.dropdown {
+				display: inline-block;
+				&.open {
+					&>a {
+						background: 0 0;
+					}
+				}
+				a {
+					font-weight: 600;
+					color: #00aeab;
+					font-size: 15px;
+					display: block !important;
+					&:hover,&:focus {
+						color: @orange;
+					}
+				}
+				.caret {
+					border-top: 10px solid #00aeab;
+					border-bottom: 5px solid transparent;
+					border-right:5px solid transparent;
+					border-left: 5px solid transparent;
+					transform:translateY(2px);
+					margin-left: 10px;
+				}
+				.dropdown-menu {
+					border-radius: 0;
+					border: none;
+					box-shadow: none;
+					background: #fcfbfa;
+					li > a {
+						color: #594f4f;
+						font-style: italic;
+						font-weight: 600;
+						font-size: 14px;
+						&:hover,&:focus {
+							background: #fff;
+							color: #65cdcb;
+						}
+					}
+
+				}
+			}
 			.navbar-nav {
 				text-align: right;
 				//display: flex;
 				width: 100%;
 				//justify-content: space-between;
-				li {
+				&>li {
 					display: inline-block;
 					vertical-align: middle;
 					float: none;
@@ -144,17 +186,20 @@
 							content: none;
 						}
 					}
+					
 				}
-				li a {
-					font: 13px OpenSansSemiBold;
+				&>li a {
+					font-size: 13px;
 					color: #343333;
 					display: inline-block;
 					padding: 5px;
+					font-weight: 600; 
 				}
-				li a:hover {
+				&>li a:hover {
 					color:#ff7246;
 				}
 			}
+
 			.navbar-collapse {
 				padding: 0;
 			}
