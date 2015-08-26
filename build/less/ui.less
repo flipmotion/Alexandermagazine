@@ -13,6 +13,14 @@
 		background-color:  #00aeab;
 	}
 }
+/*for btn with small text*/
+.btn-size{
+	padding: 10px 60px;
+}
+.btn-size2{
+	padding:10px 18px;	
+}
+/* end for btn with small text*/
 .my {
 	&-divider {
 		height: 6px;
@@ -26,11 +34,13 @@
 		box-shadow: none;
 		border-radius: 0;
 	}
+	&-select {
+		
+	}
 	&-margin {
 		&.bottom {
 			margin-bottom: 25px;
 		}
-
 	}
 }
 .btn-success:hover{
@@ -156,7 +166,11 @@
 .my {
 	&-title {
 		h2 {
-			
+			font-size: 56px;
+			.OP-SI;
+			color:#ff7246;
+			line-height: 59px;
+			vertical-align: middle;
 		}
 		h3 {
 			font-size: 25px;
@@ -165,9 +179,11 @@
 			line-height: 28px;
 			vertical-align: middle;
 		}
-		h4 {
-			
+		/*for h3 f-s*/
+		.size{
+			font-size: 30px;
 		}
+		/*end for h3 f-s*/
 		&.single-line {
 			width: 100%;
 			display: table;
@@ -186,5 +202,42 @@
 				line-height: 64px;
 			}
 		}
+		/*for line after h3 with big or small text*/
+		&.single-line2 {
+			& > div {
+				&:first-child {
+					width: 14%;
+				}
+			}
+		}
+		&.single-line3 {
+			& > div {
+				&:first-child {
+					width: 22%;
+				}
+			}
+		}
+		&.single-line4 {
+			& > div {
+				&:first-child {
+					width: 17%;
+				}
+			}
+		}
+		&.single-line5 {
+			& > div {
+				&:first-child {
+					width: 68%;
+				}
+			}
+		}
+		&.single-line6 {
+			& > div {
+				&:first-child {
+					width: 30%;
+				}
+			}
+		}
+		/*end for line after h3 with big or small text*/
 	}
 }

@@ -1,7 +1,16 @@
 .footer {
+	&.offset-bottom {
+		margin-top: -350px;
+	}
+	&-white{
+		background-color: #fff;
+	}
 	&-lvl-1 {
 		background-color: #f3f2ed;
 		padding: 40px 0;
+	}
+	&-bg-white{
+		background-color: #fff;
 	}
 	&-lvl-2 {
 		padding: 20px 0;
@@ -29,6 +38,7 @@
 					}
 				}
 				a {
+					.OP-S;
 					font-weight: 600;
 					font-size: 14px;
 					display: inline-block;
@@ -51,10 +61,43 @@
 	}
 	.attantion {
 		color: #665f57;
+		font-size: 14px;
+		.OP-RI;
+		font-weight: 400;
 	}
 	.my-input {
 		text-align: center;
 		font-size: 15px;
+		border: 1px solid #bae1de;
+		color:#00aeab;
+	}
+	.my-input[placeholder] {
+		font-size:15px;
+		.OP-R; 
+		text-indent: 16px;
+		color:#22b9b6;
+		line-height: 100%;
+		vertical-align: middle;
+	}
+	.my-input::-moz-placeholder {
+		font-size:15px;
+		.OP-R;
+		text-indent: 16px;
+		color:#22b9b6;
+		line-height: 100%;
+		vertical-align: middle;
+	} 
+	
+	.my-input:-ms-input-placeholder {
+		font-size:15px;
+		.OP-R;
+		text-indent: 16px;
+		color:#22b9b6;
+		line-height: 100%;
+		vertical-align: middle;
+	}
+	.my-input::-webkit-input-placeholder { 
+		color: #22b9b6; 
 	}
 	&-padding-item {
 		padding: 0 35px;
@@ -62,6 +105,15 @@
 			border-left: 1px solid #00aeab;
 			border-right: 1px solid #00aeab;
 			padding: 15px 0;
+		}
+		&.no-bordered{
+			border: 0;
+		}
+		&.no-content{
+			padding: 80px 0;
+		}
+		a{
+			color:@orange;
 		}
 	}
 	.social {
@@ -80,15 +132,30 @@
 				height: 50px;
 				border-radius: 100%;
 				border: 2px solid #0fb2af;
-				&.icon {
+				&.fb{
+					background:url(../../assets/img/social1.png);
 					background-position: center center;
 					background-repeat: no-repeat;
-					&.fb{
-						background: ;
 					}
-					&.fb{
-						background: ;
-					}
+				&.tw{
+					background:url(../../assets/img/social2.png);
+					background-position: center center;
+					background-repeat: no-repeat;
+				}
+				&.in{
+					background:url(../../assets/img/social3.png);
+					background-position: center center;
+					background-repeat: no-repeat;
+				}
+				&.pin{
+					background:url(../../assets/img/social4.png);
+					background-position: center center;
+					background-repeat: no-repeat;
+				}
+				&.tb{
+					background:url(../../assets/img/social5.png);
+					background-position: center center;
+					background-repeat: no-repeat;
 				}
 			}
 		}

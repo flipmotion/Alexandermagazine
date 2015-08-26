@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch');
 //less
 gulp.task('styles', function() {
-  return gulp.src('build/less/style.less')
+	return gulp.src('build/less/style.less')
 	.pipe(less())
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 	.pipe(rename({
@@ -24,7 +24,7 @@ gulp.task('styles', function() {
 	.pipe(gulp.dest('assets/css'))
 	.pipe(connect.reload())
 	.pipe(notify({
-	  message: 'less file done!'
+		message: 'less file done!'
 	}));
 });
 gulp.task('img', function () {
